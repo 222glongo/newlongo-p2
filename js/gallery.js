@@ -45,11 +45,11 @@ function swapPhoto() {
 
 document.getElementById('photo').src = mImages[mCurrentIndex].img;
 var loc = document.getElementsByClassName('location');
-loc[0].innerHTML = "location: "  + mImages[mCurrentIndex].location;
+loc[0].innerHTML = "Location: "  + mImages[mCurrentIndex].location;
 var des = document.getElementsByClassName('description');
-des[0].innerHTML = "description: " + mImages[mCurrentIndex].description;
+des[0].innerHTML = "Description: " + mImages[mCurrentIndex].description;
 var dt = document.getElementsByClassName('date');
-dt[0].innerHTML = "date: " + mImages[mCurrentIndex].date;
+dt[0].innerHTML = "Date: " + mImages[mCurrentIndex].date;
 
   mLastFrameTime = 0;
   mCurrentIndex += 1;
@@ -137,6 +137,7 @@ $(document).ready( function() {
   {
     mUrl = 'images.json';
   }
+
 
   fetchJSON();
 	// This initially hides the photos' metadata information
