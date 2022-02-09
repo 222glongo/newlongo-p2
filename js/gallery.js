@@ -33,7 +33,6 @@ function animate() {
 /************* DO NOT TOUCH CODE ABOVE THIS LINE ***************/
 
 function swapPhoto() {
-
   if(mCurrentIndex >= mImages.length)
   {
     mCurrentIndex = 0;
@@ -53,8 +52,8 @@ dt[0].innerHTML = "Date: " + mImages[mCurrentIndex].date;
 
   mLastFrameTime = 0;
   mCurrentIndex += 1;
-
 }
+
 function toggleDetails()
 {
   if($(".moreIndicator").hasClass("rot90"))
@@ -105,7 +104,7 @@ function iterateJSON(mJson);
   {
     mImages[x]= new GalleryImage();
     mImages[x].location = mJson.images[x].imgLocation;
-    mImages[x].description = mJson.images[x].description
+    mImages[x].description = mJson.images[x].description;
     mImages[x].date = mJson.images[x].date;
     mImages[x].img = mJson.images[x].imgPath;
   }
@@ -140,9 +139,7 @@ $(document).ready( function() {
 
 
   fetchJSON();
-	// This initially hides the photos' metadata information
 });
-
 window.addEventListener('load', function() {
 
 	console.log('window loaded');
