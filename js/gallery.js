@@ -38,7 +38,7 @@ function swapPhoto() {
     mCurrentIndex = 0;
   }
 
-  if(mCurrentIndex < 0); {
+  if(mCurrentIndex < 0) {
     mCurrentIndex = mImages.length-1;
 }
 
